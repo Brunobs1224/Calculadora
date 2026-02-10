@@ -1,0 +1,149 @@
+:root{
+    box-sizing: border-box;
+    --color1: rgb(4, 4, 231);
+    --color2: rgb(12, 117, 238);
+    --color3: rgb(108, 56, 228);
+    --color4: rgb(174, 0, 255);
+    --color5: rgb(221, 19, 228);
+    --color6: rgb(6, 23, 175);
+}
+body{
+    background: linear-gradient(270deg, 
+    var(--color1), 
+    var(--color2),
+    var(--color3),
+    var(--color4),
+    var(--color5));
+    background-size: 300% 300%;
+    animation: gradiente 20s ease infinite;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: black
+}
+main>section {
+    font-size: 20px;
+    color: rgb(255, 255, 255)
+}
+/*main > section → só filho direto
+
+main section → qualquer section dentro*/
+main div {
+    font-size: 25px;
+    font-family: fantasy;
+    padding: 3px;
+    background-color: aqua;
+    text-align: center;
+    margin: 0px;
+    border: 5px solid black;
+    border-radius: 10px;;
+    width: auto;
+    height: 80px;
+}
+
+header {
+    background-color: rgb(14, 10, 224);
+    color: rgb(255, 255, 255);
+    padding: 3vw;
+    text-align: center;
+    margin: 0vw;
+    font-size: 6vw;
+    box-sizing: border-box;
+    /*header {
+
+Seleciona o elemento <header> do HTML.
+Tudo dentro das chaves será aplicado a ele.
+
+background-color: rgb(243, 243, 240);
+
+Define a cor de fundo do header.
+É um tom quase branco.
+
+color: rgb(0, 0, 0);
+
+Define a cor do texto dentro do header.
+Aqui é preto.
+
+padding: 0;
+
+Remove espaço interno entre:
+
+o conteúdo (texto)
+
+e a borda do header
+
+Sem isso, o texto ficaria afastado da borda.
+
+text-align: center;
+
+Centraliza o texto horizontalmente dentro do header.
+
+margin: 0px;
+
+Remove todo espaço externo do header
+(espaço entre ele e outros elementos).
+
+font-size: 50px;
+
+Define o tamanho da fonte do texto dentro do header.
+box-sizing: border-box;
+
+Faz com que:
+
+width
+
+inclua padding e border
+
+Sem isso, o header poderia ultrapassar a largura da tela.
+
+width: 100vw;
+
+Define a largura como 100% da largura da viewport (tela).
+width só muda algo quando você quer LIMITAR a largura, caso contrário nao precisa nem informar
+
+⚠️ vw ignora bordas → costuma causar overflow lateral
+(foi exatamente o problema que você teve).*/
+} 
+.boxalerta {
+    background-color: chartreuse;
+    margin: 20px;
+    border-radius: 100px;
+}
+.button{
+    font-size: 50px;
+    color: aqua;
+    background-color: black;
+}
+.imagem1{
+    width: 100%;
+    height: auto;
+}
+.video1{
+    width: 50vw;
+    border-radius: 20px; 
+    border: 5px solid rgb(39, 108, 165);
+}
+.video2{
+    width: 50%;
+}
+/*height: 10%
+⚠️ Aqui está o problema
+height em % só funciona se o elemento pai tiver altura definida.
+Se o pai não tem height, então:
+10% de nada = nada
+a altura vira imprevisível (ou quase zero)*/
+
+/* ESTÁ NA DÚVIDA SSOBRE QUANDO USAR VW, % OU PX ?
+Você misturou dois níveis diferentes:
+
+O que você quer	                            Unidade correta
+Ajustar imagem dentro de um bloco	            %
+Ajustar bloco em relação à tela	            vw / vh 
+*/
+
+@keyframes gradiente{
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

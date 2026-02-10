@@ -1,0 +1,62 @@
+.numeros{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 30px;
+    height: 30vh;
+}
+
+.firstline{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 30vh;
+}
+/*certo, entao o flexbox serve para criar um container ?
+
+Quase isso — você tá no caminho certo, só vou ajustar a ideia pra ficar 100% correta 👍
+
+A resposta certa
+
+👉 Flexbox não serve só para “criar um container”.
+Ele serve para criar um sistema de layout dentro de um container.
+
+O container já existe (uma div, section, etc).
+O flexbox muda as regras de organização dos filhos.*/
+
+.secondline{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 30vh;
+}
+.resultado {
+    font-size: 50px;
+
+}
+.go {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttongo {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(114, 181, 226);
+}
+.flexbox{
+    display: flex;
+}
+
+.operation{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 15vh;
+    width: 100vw;
+}

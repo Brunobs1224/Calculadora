@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- html cuida da estrutura enquanto o css cuida da aparência-->
+<html lang="pt-BR">
+    <!-- Head serve para as configurações básicas da página como conjunto de caracteres aceitos, tamanho da página, zoom inicial, título no navegador. Nada aqui aparece no texto da página--> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- viewport é um comando que diz para a máquina adequar o tamanho da página ao tamanho da tela do disp. usado para acessar-->
+    <link rel="stylesheet" href="assets/css/styleteste.css"/> <!--Não adianta você ligar esse arquivo html a um css, se nã0o informar para que finalidade está fazendo isso, por isso informamos que rel = "stylesheet"
+    href = onde está o arquivo
+    rel = para que ele serve
+
+    <link rel="icon" href="favicon.ico"> relação = ícone do site
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> relação = otimização de conexão
+    -->
+    <title>Conecta P2P</title>
+  </head>
+  <body>
+    <script src="javascript/js.js" defer></script>
+    <header class="header">
+        <h1> Conecta P2P </h1>
+    </header>
+    <main>
+        <section class="textobranco">
+            <h3>Visualize a imagem a seguir: </h3>
+            <img class ="imagem1" src="assets/img/img1.jpg">
+            <!--HTML → estrutura
+            CSS → tamanho, layout, responsividade
+             vw, %, vh sempre no CSS, nunca em atributos HTML.-->
+        </section>
+        <section>
+            <video class="video1" autoplay muted loop>
+                <source src="assets/video/video1.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="videocontainer">
+            <video class="video2" autoplay muted loop>
+                <source src="assets/video/video2.mp4">
+            </video>
+        </section>
+        <button class="button">clique aqui</button>
+        <br>
+        <input type="text">
+        <br>
+        <input type="checkbox">
+        <br>
+        <input type="color">
+        <br>
+        <input type="date">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="email">
+        <section>
+            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+            </p>
+        </section>
+        <h3>Nos informe onde você mora:</h3>
+        <input type="text" id="cep" placeholder="Digite seu CEP">
+        <button onclick="buscarCEP()">Buscar CEP"</button>
+        <p>Seu CEP é:</p>
+        <div>
+            <p id="resultado"></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section>
+            <button onclick="jokes()">Clique para ver uma piada</button>
+            <p id="piada"></p>
+        </section>
+        <br>
+        <section>
+            <button onclick="randomuser()">
+             Clique para gerar um usuário aleatório
+            </button>
+            <p id="aleatorio"></p>
+        </section>
+        <br>
+        <br>
+        <section class="boxalerta">
+            <h2>Seção especial </h2>
+            <h3>Listas</h3>
+        </section>
+        
+            <ul>
+                <li> item </li>
+                    <ol>
+                        <li>item 1
+                            <section>
+                                <ol>
+                                    <li>subitem1</li>
+                                    <li>subitem2</li>
+                                    <li>subitem3</li>
+                                    <li>subitem4</li>
+                                </ol>
+                            </section>
+                        </li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                        <li>item 4</li> 
+                    </ol>
+                <li> item </li>
+                <li> item </li>
+                <li> item </li>
+                <li> item </li>
+            </ul>
+            <br>
+            <br>
+            <ol>
+                <li>Item ordenado</li>
+                <li>Item ordenado</li>
+                <li>Item ordenado</li>
+                <li>Item ordenado</li>
+                <li>Item ordenado</li>
+                <li>Item ordenado</li>
+                <li>Item ordenado</li>
+                <li>Item ordenado</li>
+            </ol>
+        
+    </main>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2026</p>
+    </footer>
+  </body>
+</html>
