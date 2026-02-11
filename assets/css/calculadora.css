@@ -12,17 +12,6 @@
     align-items: start;
     height: 30vh;
 }
-/*certo, entao o flexbox serve para criar um container ?
-
-Quase isso — você tá no caminho certo, só vou ajustar a ideia pra ficar 100% correta 👍
-
-A resposta certa
-
-👉 Flexbox não serve só para “criar um container”.
-Ele serve para criar um sistema de layout dentro de um container.
-
-O container já existe (uma div, section, etc).
-O flexbox muda as regras de organização dos filhos.*/
 
 .secondline{
     display: flex;
